@@ -32,3 +32,4 @@ group :production do
      gem 'rails_12factor'
 end
 
+#heroku git:remote -a linkyapps for heroku run rake db:migrate
