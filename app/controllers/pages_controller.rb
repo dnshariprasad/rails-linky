@@ -6,10 +6,4 @@ class PagesController < ApplicationController
   def about
   end #about
 
-  def signup
-  end #signup
-  
-  def signin
-  end #signin
-
 end #class
