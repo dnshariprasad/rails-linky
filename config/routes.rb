@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
   root "pages#home"
   get "about" => "pages#about"
+  
+  #http://blog.andrewray.me/how-to-set-up-devise-ajax-authentication-with-rails-4-0/
+  devise_for :users, :controllers => {sessions: 'sessions', registrations: 'registrations'}  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
